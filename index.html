@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Andrea Oddo - Physicist | Software Developer | Science Communicator">
-    <title>Andrea Oddo - Physicist | Software Developer | Science Communicator</title>
+    <meta name="description" content="Andrea Oddo - Fisico | Programmatore software | Divulgatore">
+    <title>Andrea Oddo - Fisico | Programmatore software | Divulgatore</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Montserrat, sans-serif;
+            font-size: 1.2em;
             background-color: #0d0d0d;
             color: #e0e0e0;
             line-height: 1.6;
@@ -45,7 +46,11 @@
         }
         section {
             padding: 50px;
-            text-align: center;
+            text-align: left;
+            display: none; /* Initially hide all sections */
+        }
+        section.active {
+            display: block; /* Show the active section */
         }
         section h2 {
             font-size: 2em;
@@ -73,42 +78,138 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
+
     </style>
 </head>
 <body>
 
 <header>
     <h1>Andrea Oddo</h1>
-    <p>Physicist | Software Developer | Science Communicator</p>
+    <p>Fisico | Programmatore software | Divulgatore</p>
 </header>
 
 <nav>
-    <a href="#about">About Me</a>
-    <a href="#science">Science</a>
-    <a href="#programming">Programming</a>
-    <a href="#outreach">Outreach</a>
-    <a href="#contact">Contact</a>
+    <a onclick="showSection('about')">Chi sono?</a>
+    <a onclick="showSection('science')">Scienza</a>
+    <a onclick="showSection('outreach')">Divulgazione</a>
+    <a onclick="showSection('programming')">Programmazione</a>
+    <a onclick="showSection('contact')">Contattami</a>
 </nav>
 
 <section id="about" class="space-theme">
-    <h2>About Me</h2>
-    <p>Hello! I'm Andrea Oddo, a passionate physicist and software developer. I love exploring the mysteries of the universe while bridging the gap between science and technology.</p>
+    <h2>Chi sono?</h2>
+    <div>Ciao! Mi chiamo Andrea e sono un programmatore software con un passato da fisico e cosmologo.</div>
+    <div>Nonostante abbia appeso al chiodo la carriera da ricercatore, rimango appassionato di scienza, e quando posso
+        la racconto al pubblico.
+    </div>
+    <div>Nato e cresciuto nell'hinterland milanese, ora vivo e lavoro a Trieste.</div>
+    <div>A contraddistinguermi sono la mia passione per la fantascienza e il mio pessimo senso dell'umorismo.</div>
 </section>
 
 <section id="science">
-    <h2>Science</h2>
-    <p>From quantum mechanics to cosmology, my work in physics spans a variety of exciting topics. I'm deeply invested in unraveling the complexities of the cosmos and sharing those insights with the world.</p>
+    <h2>Scienza</h2>
+    <div>Tutto inizia nel 2008, quando comincio il corso di laurea in Fisica all'Università di Milano - Bicocca.</div>
+    <div>Nel 2012, continuo il mio percorso iniziando il corso di laurea magistrale in Astrofisica e Fisica dello
+        Spazio, sempre all'Università di Milano - Bicocca.
+    </div>
+    <div>Dopo un anno sabbatico, nel 2016 inizio un PhD alla SISSA (Scuola Internazionale Superiore di Studi Avanzati)
+        di Trieste in Fisica Astroparticellare, specializzandomi nel campo della cosmologia e dell'evoluzione
+        dell'Universo.<br/>
+        Nel 2019, seguo un tirocinio Erasmus+ all'IEEC-CSIC di Barcellona sotto la supervisione del dr. Martin
+        Crocce.<br/>
+        Nel 2020 conseguo il titolo di Dottore di Ricerca sotto la supervisione del dr. Emiliano
+        Sefusatti (SISSA, INAF-OATS), con una tesi intitolata "Toward a Complete Cosmological Analysis of Galaxy
+        Clustering Measurements from Spectroscopic Redshift Surveys".
+    </div>
+    <div>Nel corso del PhD, ho fatto parte dello Euclid Consortium, che ha portato al lancio del satellite Euclid nel
+        luglio 2023, e che sta contribuendo allo studio dell'evoluzione dell'Universo, e della natura di materia oscura
+        ed energia oscura. Il mio contributo è stato nello studio della distribuzione delle galassie nell'Universo, in
+        particolare nella modellazione dei cosiddetti spettro di potenza e bispettro.
+    </div>
+    <div>Nel corso degli anni, ho maturato e mantenuto interesse anche nell'ambito della relatività generale di
+        Einstein, con focus principale su argomenti quali i buchi neri, wormholes, motori a curvatura e macchine del
+        tempo. Ho anche contribuito alla stesura delle note del corso di "Advanced General Relativity and Quantum Field
+        Theory in Curved Spacetime" del professor Stefano Liberati (SISSA).
+    </div>
+    <h3>Pubblicazioni scientifiche</h3>
+    <ol>
+        <li><b>Toward a robust inference method for the galaxy bispectrum: likelihood function and model
+            selection</b>,<br/>A. Oddo, E. Sefusatti, C. Porciani, P. Monaco, A. G. Sánchez, 2020,<br/><a
+                href="https://doi.org/10.1088/1475-7516/2020/03/056">DOI 10.1088/1475-7516/2020/03/056</a></li>
+        <li><b>Towards cosmological constraints from the compressed modal bispectrum: a robust comparison of real-space
+            bispectrum estimators</b>,<br/>J. Byun, A. Oddo, C. Porciani, E. Sefusatti, 2021,<br/><a
+                href="https://doi.org/10.1088/1475-7516/2021/03/105">DOI 10.1088/1475-7516/2021/03/105</a></li>
+        <li><b>The reach of next-to-leading-order perturbation theory for the matter bispectrum</b>,<br/>D.
+            Alkhanishvili, C. Porciani, E. Sefusatti, M. Biagetti, A. Lazanu, A. Oddo, V. Yankelevich, 2021,<br/><a
+                    href="https://doi.org/10.1093/mnras/stac567">DOI 10.1093/mnras/stac567</a></li>
+        <li><b>Cosmological parameters from the likelihood analysis of the galaxy power spectrum and bispectrum in real
+            space</b>,<br/>A. Oddo, F. Rizzo, E. Sefusatti, C. Porciani, P. Monaco, 2021,<br/><a
+                href="https://doi.org/10.1088/1475-7516/2021/11/038">DOI 10.1088/1475-7516/2021/11/038</a></li>
+        <li><b>The halo 3-point correlation function: a methodological analysis</b>,<br/>A. Veropalumbo, A. Binetti, E.
+            Branchini, M. Moresco, P. Monaco, A. Oddo, A. G. Sanchez, E. Sefusatti, 2022,<br/><a
+                    href="https://doi.org/10.1088/1475-7516/2022/09/033">DOI 10.1088/1475-7516/2022/09/033</a></li>
+        <li><b>The halo bispectrum multipoles in redshift space</b>,<br/>F. Rizzo, C. Moretti, K. Pardede, A. Eggemeier,
+            A. Oddo, E. Sefusatti, C. Porciani, P. Monaco, 2023,<br/><a
+                    href="https://doi.org/10.1088/1475-7516/2023/01/031">DOI 10.1088/1475-7516/2023/01/031</a></li>
+        <li><b>Euclid preparation XLI. Galaxy power spectrum modelling in real space</b>,<br/>A. Pezzotta, <i>et al.</i>,
+            2024,<br/><a href="https://doi.org/10.1051/0004-6361/202348939">DOI 10.1051/0004-6361/202348939</a></li>
+    </ol>
+
+
+</section>
+
+<section id="outreach" class="space-theme">
+    <h2>Divulgazione</h2>
+    <div>Credo in una divulgazione corretta, onesta, e che sa prendersi il suo tempo.</div>
+    <div>Ritengo che la scienza sia una cosa seria e complicata, che va comunicata nel modo più completo possibile,
+        semplificando quando necessario, ma mai banalizzando.
+    </div>
+    <div>Mi piace divulgare direttamente davanti a un pubblico, ma a volte mi metto alla prova con mezzi differenti.
+    </div>
+    <div>Durante la laurea magistrale, mi appassiono alla divulgazione e alla comunicazione della scienza. Dal 2015 a
+        oggi, ho partecipato a diverse manifestazioni e iniziative di disseminazione della scienza.
+    </div>
+    <h3>Attività, eventi, collaborazioni</h3>
+    <ul>
+        <li>Settembre 2015, "MeetMeTonight - Notte Europea dei Ricercatori", con gruppo Astro2Night</li>
+        <li>Novembre 2015, "GR-100, 100 anni della Relatività Generale", intervento fuori programma</li>
+        <li>Febbraio 2016 - Aprile 2019, articoli in collaborazione con Italia Unita per la Scienza</li>
+        <li>Maggio 2016, "Pint of Science", assistente</li>
+        <li>Settembre 2016, "MeetMeTonight - Notte Europea dei Ricercatori", con gruppo Astro2Night</li>
+        <li>2017 - 2020, "SISSA for Schools", speaker per attività rivolte a studenti delle scuole</li>
+        <li>Febbraio 2017, "SISSA Student Day", guida alla mostra sulla Storia dell'Universo</li>
+        <li>Novembre - Dicembre 2017, "Creative Science Communication", partecipazione al corso</li>
+        <li>Febbraio 2018, "SISSA Student Day", speaker e guida alla mostra sulla Storia dell'Universo</li>
+        <li>Maggio 2018, "Pint of Science", intervista al programma RADAR di Radio Rai FVG e speaker con il talk "Una
+            birra cosmica: spillare l'universo in un pub in espansione"
+        </li>
+        <li>Giugno 2018, "Fantasticamente Scienza", speaker con talk "Spaziotempo: ultima frontiera", in collaborazione
+            con "Sinapsi - Connecting Science" e "Italia Unita per la Scienza"
+        </li>
+        <li>Settembre 2018, "Sharper Night, Trieste Next - Notte Europea dei Ricercatori", presso Stand SISSA</li>
+        <li>Luglio 2018, "Fest@t", festival scientifico</li>
+        <li>Settembre 2019, "Sharper Night, Trieste Next - Notte Europea dei Ricercatori", presso Stand SISSA</li>
+        <li>Novembre 2019 - Gennaio 2020, Realizzazione di contenuti per canale YouTube</li>
+        <li>Febbraio 2020, "SISSA Student Day", guida alla mostra sulla Storia dell'Universo, e "Scienza sul Divano" con
+            Ruggero Rollini
+        </li>
+        <li>Febbraio 2020, "FameLab", terzo classificato alla selezione locale di Trieste</li>
+        <li>Aprile 2020 - Maggio 2022, "ScienceStream", collaboratore a progetto di divulgazione su Twitch</li>
+        <li>Ottobre 2020 - Presente, contenuti su Instagram, account "spacetimeoddities"</li>
+        <li>Marzo 2021, "Scienza a Spicchi", realizzazione di contenuti scientifici in collaborazione con Pallacanestro
+            Trieste
+        </li>
+        <li>Maggio 2023, "Pint of Science", speaker con "In viaggio nello spaziotempo... senza muoversi dal pub"</li>
+    </ul>
+
 </section>
 
 <section id="programming">
     <h2>Programming</h2>
-    <p>I develop software tools and applications that enhance scientific research and data analysis. My expertise includes Python, C++, and JavaScript, with a focus on creating efficient, scalable solutions.</p>
+    <p>I develop software tools and applications that enhance scientific research and data analysis. My expertise
+        includes Python, C++, and JavaScript, with a focus on creating efficient, scalable solutions.</p>
 </section>
 
-<section id="outreach" class="space-theme">
-    <h2>Outreach</h2>
-    <p>Science communication is my passion. I regularly engage in outreach activities to inspire future scientists and make complex ideas accessible to everyone.</p>
-</section>
 
 <section id="contact">
     <h2>Contact</h2>
@@ -120,6 +221,43 @@
     <p>&copy; 2024 Andrea Oddo. All rights reserved.</p>
     <p>Connect with me on <a href="https://www.linkedin.com">LinkedIn</a></p>
 </footer>
+
+<script>
+    // JavaScript function to show only the selected section
+    function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+
+        // Show the selected section
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.classList.add('active');
+        }
+    }
+
+    // By default, show "About Me" section
+    document.getElementById('about').classList.add('active');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
 
 </body>
 </html>
