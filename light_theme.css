@@ -1,0 +1,129 @@
+/* Light Theme - Professional Look */
+html {
+    scrollbar-gutter: stable; /* Reserve space for the scrollbar */
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.1em;
+    background-color: #f8f8f8; /* Light neutral background */
+    color: #333333; /* Dark gray for text */
+    line-height: 1.6;
+    max-width: 1000px; /* Limit body width to 1000px */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Optional padding for some spacing */
+}
+
+header {
+    background-color: #ffffff; /* Clean white background */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0; /* Subtle border */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333333; /* Dark gray for strong contrast */
+}
+
+header p {
+    margin-top: 5px;
+    color: #666666; /* Muted gray for subtext */
+}
+
+nav {
+    background-color: #f0f0f0; /* Soft light gray background */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #333333; /* Dark gray for text */
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff; /* Professional blue for hover effect */
+}
+
+section {
+    padding: 50px;
+    text-align: justify;
+    display: none; /* Initially hide all sections */
+    background-color: #ffffff; /* Clean white background for sections */
+    border-bottom: 2px solid #e0e0e0;
+}
+
+section.active {
+    display: block; /* Show the active section */
+}
+
+section h2 {
+    font-size: 2em;
+    color: #333333; /* Dark gray for headings */
+    border-bottom: 2px solid #007bff; /* Blue accent for section headings */
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    margin-top: 50px;
+    border-bottom: 1px solid #007bff;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    color: #666666;
+}
+
+footer a {
+    color: #007bff; /* Blue links for footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0056b3; /* Darker blue for hover state */
+}
+
+.space-theme {
+    background: linear-gradient(to bottom, #e0e7ff, #d0dffe); /* Subtle light blue gradient */
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+a {
+    color: #007bff; /* Professional blue for links */
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue for hover */
+}
+
+li {
+    margin: 15px 0;
+    color: #333333; /* Dark gray for list items */
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 25px; /* Size of the icons */
+    color: #666666; /* Gray color for icons */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #007bff; /* Blue color on hover */
+    transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
